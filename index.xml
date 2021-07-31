@@ -139,23 +139,23 @@
     
     <item>
       <title>About</title>
-      <link>https://shubham14111.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shubham14111.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
       <link>https://shubham14111.github.io/about.pt-br/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://shubham14111.github.io/about.pt-br/</guid>
       <description>Escrito em Go, Hugo é um gerador de sites estáticos de código aberto disponível sobre a licença Apache Licence 2.0. O Hugo suporta TOML, YAML e JSON como arquivos de dados, Markdown e HTML como arquivos de conteúdo, e usa shortcodes para adicionar conteúdos ricos. Outras funcionalidades notaveis são taxonomias, modo multilingual, processamento de imagens, formatos de saída customizaveis, minificação de HTML/CSS/JS e suporte a fluxos SASS/SCSS.
 O Hugo faz o uso de vários projetos de código aberto incluíndo:</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://shubham14111.github.io/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shubham14111.github.io/about/</guid>
+      <description>Hello! I am Shubham Gandhi.I am a final year 🎓 undergrad at DEVANG PATEL INSTITUTE OF ADVANCE TECHNOLOGY AND RESEARCH,CHARUSAT,CHANGA
+I am Software Enginner.I am also FOSS and Blockchain enthusiast.I have experience in Database Designing,Microservice Architecture and Implementing REST APIs.This Summer I worked with Seaflux technologies pvt. ltd.,Ahmedabad as Node.JS intern.I am also Incoming Associate Software Enginner 🖥 at Jeavio,Vadodra.
+I have worked on JavaScript and it&amp;rsquo;s various framework, I am comfortable with Docker ,Kubernetes ,Node.</description>
     </item>
     
     <item>
