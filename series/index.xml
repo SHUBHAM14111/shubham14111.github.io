@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Shubham Gandhi</title>
-    <link>https://shubhamgandhi.github.io/series/</link>
+    <link>https://shubham14111.github.io/series/</link>
     <description>Recent content in Series on Shubham Gandhi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://shubhamgandhi.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://shubham14111.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Guia do Thema</title>
-      <link>https://shubhamgandhi.github.io/series/guia-do-thema/</link>
+      <link>https://shubham14111.github.io/series/guia-do-thema/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://shubhamgandhi.github.io/series/guia-do-thema/</guid>
+      <guid>https://shubham14111.github.io/series/guia-do-thema/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Themes Guide</title>
-      <link>https://shubhamgandhi.github.io/series/themes-guide/</link>
+      <link>https://shubham14111.github.io/series/themes-guide/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://shubhamgandhi.github.io/series/themes-guide/</guid>
+      <guid>https://shubham14111.github.io/series/themes-guide/</guid>
       <description></description>
     </item>
     
