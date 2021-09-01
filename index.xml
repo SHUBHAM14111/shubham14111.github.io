@@ -154,7 +154,7 @@ I have worked on JavaScript and it&amp;rsquo;s various framework, I am comfortab
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://shubham14111.github.io/projects/</guid>
-      <description>Implemented Blockchain in JavaScript  Implemented the complete Blockchain from scratch in JavaScript. Implemented proof of work Implemented Consensus Algorithm based on longest chain rule Built a Block Explorer to explore the blocks  Decentralized Lottery System  Implemented Decentralized Lottery system using Ethereum&amp;rsquo;s smart contract. Tested the contract using ganache and mocha Deployed the contract on Rinkeby Test Network Implemented front-end in React Used Web3 to interact with the contract  </description>
+      <description>Implemented Blockchain in JavaScript  Implemented the complete Blockchain from scratch in JavaScript. Implemented proof of work Implemented Consensus Algorithm based on longest chain rule Built a Block Explorer to explore the blocks  Decentralized Lottery System  Implemented Decentralized Lottery system using Ethereum&amp;rsquo;s smart contract. Tested the contract using ganache and mocha Deployed the contract on Rinkeby Test Network Implemented front-end in React Used Web3 to interact with the contract  Decentralized Election System  Implemented Decentralized Election system using Ethereum&amp;rsquo;s smart contract.</description>
     </item>
     
   </channel>
