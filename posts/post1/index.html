@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Shubham Gandhi">
+    <meta name="description" content="Article showcasing how to deploy a local private ethereum blockchain in ubuntu for testing">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to deploy a local private ethereum blockchain in ubuntu for testing?"/>
+<meta name="twitter:description" content="Article showcasing how to deploy a local private ethereum blockchain in ubuntu for testing"/>
+
+    <meta property="og:title" content="How to deploy a local private ethereum blockchain in ubuntu for testing?" />
+<meta property="og:description" content="Article showcasing how to deploy a local private ethereum blockchain in ubuntu for testing" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shubham14111.github.io/posts/post1/" />
+<meta property="article:published_time" content="2021-09-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-05T00:00:00+00:00" />
+
+
+    <title>
+  How to deploy a local private ethereum blockchain in ubuntu for testing? · Shubham Gandhi
+</title>
+
+    
+      <link rel="canonical" href="https://shubham14111.github.io/posts/post1/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.8e2b2510f60e1715eae08d113a808dcdaf17f6f711edb9e969be38d0074d240d.css" integrity="sha256-jislEPYOFxXq4I0ROoCNza8X9vcR7bnpab440AdNJA0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.65e4a56a163b15e9e4b2a60f1616159788d73c819d97ea27270b3780f2d8f730.css" integrity="sha256-ZeSlahY7FenksqYPFhYVl4jXPIGdl&#43;onJws3gPLY9zA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Shubham Gandhi
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://shubham14111.github.io/posts/post1/">
+              How to deploy a local private ethereum blockchain in ubuntu for testing?
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-09-05T00:00:00Z'>
+                September 5, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/ethereum/">Ethereum</a>
+      <span class="separator">•</span>
+    <a href="/categories/blockchain/">Blockchain</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/ethereum/">Ethereum</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/geth/">Geth</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/ubuntu/">Ubuntu</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>In this blog we will discuss steps to install your own Ethereum blockchain in your local Ubuntu computer, for testing purposes. We can also use this local instance to deploy our smart contracts.</p>
+<p><img src="/images/blogs/post1/ethereum.jpg" alt=""></p>
+<p>For deploying and running the Ethereum blockchain, we will use <a href="https://github.com/ethereum/go-ethereum">Go Ethereum</a> also know as <code>Geth</code>. Geth is a command line interface for running Ethereum node. It is implemented in Go Language. Using Geth you can join Ethereum network, transfer ether between accounts, create ethereum network or even mine ethers. So without doing further ado lets get started!</p>
+<p><strong>1. Installing Geth</strong></p>
+<p>You can download and install Go Ethereum (Geth) directly from <a href="https://geth.ethereum.org/downloads/">official website</a></p>
+<p>You can install Geth from Ubuntu terminal using following commands</p>
+<p>To enable launchpad repository run:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo add-apt-repository -y ppa:ethereum/ethereum
+</code></pre></div><p>Then install stable version of go-ethereum:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get update
+sudo apt-get install ethereum
+</code></pre></div><p>The commands <code>abigen</code>,<code>bootnode</code>,<code>clef</code>,<code>evm</code>,<code>geth</code>,<code>puppeth</code>,<code>rlpdump</code> and <code>wnode</code> will be available on your system in <code>/usr/bin/</code>.</p>
+<p>Find the different options and commands available:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">geth --help
+</code></pre></div><p><strong>2. Configuring the Genesis Block</strong></p>
+<p>Let us create a json file which will describe how the genesis block or the first block of block will be created.Genesis block does not contain any transactions.</p>
+<p>Create a file named <code>genesis-config.json</code> and save it in the root folder of the nodes directories.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;config&#34;</span>: {
+    <span style="color:#f92672">&#34;chainId&#34;</span>: <span style="color:#ae81ff">2018</span>,
+    <span style="color:#f92672">&#34;homesteadBlock&#34;</span>: <span style="color:#ae81ff">0</span>,
+    <span style="color:#f92672">&#34;eip155Block&#34;</span>: <span style="color:#ae81ff">0</span>,
+    <span style="color:#f92672">&#34;eip158Block&#34;</span>: <span style="color:#ae81ff">0</span>,
+    <span style="color:#f92672">&#34;eip150Block&#34;</span>: <span style="color:#ae81ff">0</span>
+  },
+  <span style="color:#f92672">&#34;alloc&#34;</span>: {},
+  <span style="color:#f92672">&#34;coinbase&#34;</span>: <span style="color:#e6db74">&#34;0x0000000000000000000000000000000000000000&#34;</span>,
+  <span style="color:#f92672">&#34;difficulty&#34;</span>: <span style="color:#e6db74">&#34;10&#34;</span>,
+  <span style="color:#f92672">&#34;extraData&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#f92672">&#34;gasLimit&#34;</span>: <span style="color:#e6db74">&#34;0x2fefd8&#34;</span>,
+  <span style="color:#f92672">&#34;nonce&#34;</span>: <span style="color:#e6db74">&#34;0x0000000000000042&#34;</span>,
+  <span style="color:#f92672">&#34;mixhash&#34;</span>: <span style="color:#e6db74">&#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;</span>,
+  <span style="color:#f92672">&#34;parentHash&#34;</span>: <span style="color:#e6db74">&#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;</span>,
+  <span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#e6db74">&#34;0x00&#34;</span>
+}
+</code></pre></div><p>you can create genesis block by storing this above given json data in a file named &ldquo;genesis-config.json&rdquo; and executing the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">geth --datadir ./data init genesis-config.json
+</code></pre></div><p>The <code>chainId</code> is the network id of the Ethereum network. You can choose any value high than 4 ,because 1-4 are defaults for main and test networks.</p>
+<p><strong>3. Creating local nodes</strong></p>
+<p>Let us creat somes nodes locally in our computer. Create 3 new folders. Each of them will represent a node in our blockchain. This can be done using following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir node01 node02 node03
+</code></pre></div><p><strong>4. Generating Ethereum accounts</strong></p>
+<p>You can create any number of account using the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">geth --datadir <span style="color:#e6db74">&#34;/PATH_TO_ANY_NODE/&#34;</span> account new
+</code></pre></div><p>You will be prompted for a secret password. Write down the address of the created accounts and memorize the password. This credential will be useful later when you want to unlock your account for transactions or deploying your smart contracts.</p>
+<p><strong>5. Initializing and strating nodes</strong></p>
+<p>Initialize each node using the genesis-config file previously created:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">geth --datadir <span style="color:#e6db74">&#34;/PATH_TO_A_NODE/&#34;</span> init /PATH_TO/genesis-config.json
+</code></pre></div><p><img src="/images/blogs/post1/initializingAccount.png" alt=""></p>
+<p>Run this command for each node.</p>
+<p>Then run each node using the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">geth --identity <span style="color:#e6db74">&#34;name_of_your_node&#34;</span> --rpc --rpcport <span style="color:#e6db74">&#34;8000&#34;</span> --rpccorsdomain <span style="color:#e6db74">&#34;*&#34;</span> --datadir <span style="color:#e6db74">&#34;/PATH_TO_A_NODE/&#34;</span> --port <span style="color:#e6db74">&#34;30303&#34;</span> --nodiscover --rpcapi <span style="color:#e6db74">&#34;db,eth,net,web3,personal,miner,admin&#34;</span> --networkid <span style="color:#ae81ff">1900</span> --nat <span style="color:#e6db74">&#34;any&#34;</span>
+</code></pre></div><p><img src="/images/blogs/post1/running_account.png" alt=""></p>
+<p>note that each node should have a different <code>port</code> and <code>rpcport</code></p>
+<p><strong>6. Interfacing with each node using terminal</strong></p>
+<p>Now let us interact with deployed node using terminal. In order to do that write the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">geth attach http://127.0.01:8000
+</code></pre></div><p><img src="/images/blogs/post1/console.png" alt=""></p>
+<p>Note that each <code>port</code> will map to a unique <code>node</code>.</p>
+<p><strong>7. Interconnecting the nodes</strong></p>
+<p>As we initalized and run the nodes, the nodes will not know about each others existence, we need to connect them. We can do that by first getting their enode address by using following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; admin.nodeInfo
+</code></pre></div><p><img src="/images/blogs/post1/enode.png" alt=""></p>
+<p>Copy the enode address completely. Now you can connect the other nodes to this one by running the following command in their respective terminals:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; admin.addPeer<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;ENODE_ADDRESS&#34;</span><span style="color:#f92672">)</span>
+</code></pre></div><p><strong>8. Strating a miner</strong></p>
+<p>Now let us set an account to recieve the mining awards. This is called the ehterbase account. We will use the admin node i.e node01 as a miner. Go to the console interfaced with node01 and run the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; miner.setEtherbase<span style="color:#f92672">(</span>eth.accounts<span style="color:#f92672">[</span>0<span style="color:#f92672">])</span>
+</code></pre></div><p>after getting true run this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; miner.start<span style="color:#f92672">()</span>
+</code></pre></div><p>You should see null message in the terminal, and then in the other terminal where you intialized and started your node should see progress of mining that just got started.</p>
+<p><img src="/images/blogs/post1/miner.png" alt=""></p>
+<p>Great! now our Private Local Ethereum Blockchain is ready. Feel free to add new nodes, create new accounts, send transactions ,deploying your smartcontracts and try to learn how this seamless thing works.</p>
+<p>Thanks for reading!</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2019 -
+        
+        2021
+         Shubham Gandhi 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.a350362441276ec5c1671926420497bb8e52b63ead1d51d3c9bc4342d0039526.js" integrity="sha256-o1A2JEEnbsXBZxkmQgSXu45Stj6tHVHTybxDQtADlSY="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

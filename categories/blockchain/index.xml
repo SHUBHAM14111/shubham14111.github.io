@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Shubham Gandhi</title>
-    <link>https://shubham14111.github.io/posts/</link>
-    <description>Recent content in Posts on Shubham Gandhi</description>
+    <title>Blockchain on Shubham Gandhi</title>
+    <link>https://shubham14111.github.io/categories/blockchain/</link>
+    <description>Recent content in Blockchain on Shubham Gandhi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 05 Sep 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://shubham14111.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://shubham14111.github.io/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
